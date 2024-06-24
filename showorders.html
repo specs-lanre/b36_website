@@ -1,0 +1,70 @@
+{%extends 'base.html'%}
+ 
+
+{%block pagecontent%} 
+
+   
+<div class="siteheader_topbar">  
+  <div class="topbar_right">
+ <!-- top bar component start--> 
+<span class="topbar_item" style=""  >
+  
+  <span class="topbar_item_left"> 
+  <i class="bi bi-telephone-inbound-fill topbar_item_left_icon" ></i>
+ </span>   
+  <span class="topbar_item_right">
+ <span class="topbar_item_right_top"> Call us Anytime</span>  
+  </span> 
+
+<span class="topbar_item_right_bottom">+234 12345678</span>  
+  </span>  
+<!-- top bar component start-->
+ 
+ <span class="topbar_item"  style=""
+  >
+  
+  <span class="topbar_item_left">
+  <i class="bi bi-envelope-at-fill topbar_item_left_icon"  style=""></i>
+  </span>
+  
+  <span class="topbar_item_right">
+ <span class="topbar_item_right_top"> Email us </span>
+ </span>
+    <span class="topbar_item_right_bottom">contact@yourhandiman.com.ng</span>
+  
+  </span>
+  <!-- top bar component end-->
+ <span class="topbar_item"   style=""  >
+ <span class="topbar_item_left"> 
+    <i class="bi bi-geo-alt topbar_item_left_icon" style=""></i>
+  </span>  
+  <span class="topbar_item_right">
+ <span class="topbar_item_right_top"> Our Office</span>
+ </span>
+   <span class="topbar_item_right_bottom">#27 Awolowo way.Ikeja</span></span>
+<!-- top bar component end-->
+</div> </div>  
+ 
+  
+  
+  
+<p class="fs-1 text-center">{{title}}</p>
+<div class="container">
+<div class="row">
+<div class="col">
+
+{%for x in d%}
+<div class="alert alert-info fs-5 my-2">{{x.id}} {{x}} 
+<a class="btn btn-primary mx-2" href="/showorderdetails/{{x.id}}">
+More details</a>
+</div>
+{%endfor%}
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- Footer --> {%endblock%}
